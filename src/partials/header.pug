@@ -1,0 +1,14 @@
+.header.d-flex.flex-column.justify-content-between.align-items-center(class=`${page === 'index' ? 'index' : ''}`)
+  nav.topmenu.d-flex.justify-content-center
+    a(href=`${page === 'index' ? '#about' : 'index.pug'}` class=`${page === 'index' ? 'active' : ''}`) About
+    .line.align-self-center
+    a(href='commands.pug' class=`${page === 'commands' ? 'active' : ''}`) Commands
+    .line.align-self-center
+    a(href='https://discord.gg/DuFunUv' target='_blank') Join
+    .line.align-self-center
+    a(href='https://discordapp.com/api/oauth2/authorize?client_id=167095321740967937&scope=bot&permissions=806841424'  target='_blank')
+      | Invite
+  if page === 'index'
+    .server-info.d-flex.align-items-center.flex-column.text-center
+      h1 Genesis - Discord Bot
+      a.links-suppressor.join-btn.btn-pill.white(href='https://discord.gg/DuFunUv' target='_blank') Join Server
