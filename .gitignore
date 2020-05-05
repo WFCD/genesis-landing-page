@@ -5,4 +5,6 @@ node_modules
 
 .idea
 
+src/tools/commands.json
+
 __build/

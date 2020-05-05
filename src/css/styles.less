@@ -27,6 +27,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.8);
+    z-index: -1;
   }
 }
 
@@ -39,6 +40,11 @@ body {
 &.channel {
   color: #7289DA;
   
+  &:hover {
+    color: #7289DA;
+    filter: opacity(1)!important;
+  }
+  
   a& {
     text-decoration: none;
     &:hover {
@@ -46,7 +52,7 @@ body {
     }
   }
 
-  &:hover {
+  &.darker:hover, &.lighter:hover {
     color: #7289DA;
     filter: opacity(1);
   }
@@ -88,6 +94,14 @@ body {
     width: 100%;
     height: 75px;
     background-image: linear-gradient(45deg, rgba(101,128,233,0.73) 0%, #1E6DB6 100%);
+  }
+}
+
+.dropdown-menu.show {
+  background-color: #25272C;
+  
+  .dropdown-item:hover {
+    background-color: #fff;
   }
 }
 
@@ -252,6 +266,33 @@ h3 {
   margin-bottom: 6px;
 }
 
+h4 {
+  font-size: 24px;
+  line-height: 31px;
+  color: #fff;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  font-weight: 500;
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 400;
+  padding: 0;
+  margin-bottom: 4px;
+}
+
 // Buttons
 .btn-pill {
   height: 50px;
@@ -279,4 +320,20 @@ h3 {
 // Links suppressor
 a.links-suppressor, .links-suppressor a {
   text-decoration: none;
+}
+
+// commands formatting
+.command {
+  color: white;
+  .usages {
+    color: #aaa;
+  }
+  
+  .params {
+    color: #aaa;
+    
+    .param pre {
+      color: #aaa;
+    }
+  }
 }

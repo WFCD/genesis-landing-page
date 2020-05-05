@@ -1,0 +1,364 @@
+div.command
+  h4.command-name add build
+  ol.usages
+    li.usage
+      span.description Display instructions for creating a new build with Genesis
+      ul.params
+    li.usage
+      span.description Add a build with the provided title, body, and image URL
+      ul.params
+        li.param 
+          pre &#60;title&#62;
+        li.param 
+          pre &#60;body&#62;
+        li.param 
+          pre &#60;image url&#62;
+    li.usage
+      span.description Add one or more builds from a structured json file. [Example file.](https://pastebin.com/raw/EU9ZX1uQ)
+      ul.params
+
+div.command
+  h4.command-name delete build
+  ol.usages
+    li.usage
+      span.description Delete an existing build from Genesis
+      ul.params
+        li.param 
+          pre &#60;build id&#62;
+
+div.command
+  h4.command-name get build
+  ol.usages
+    li.usage
+      span.description Display information on an existing build from Genesis
+      ul.params
+        li.param 
+          pre &#60;build id&#62;
+
+div.command
+  h4.command-name list builds
+  ol.usages
+    li.usage
+      span.description Display information on an existing build from Genesis. `|` separates title, body, and image. `;` separates sections in the body.
+      ul.params
+        li.param 
+          pre &#60;title | body | image&#62;
+
+div.command
+  h4.command-name search builds
+  ol.usages
+    li.usage
+      span.description Display information on an existing build from Genesis
+      ul.params
+        li.param 
+          pre &#60;query&#62;
+
+div.command
+  h4.command-name set public build|spb
+  ol.usages
+    li.usage
+      span.description Set a build or builds to be public
+      ul.params
+        li.param 
+          pre &#60;build id(s)&#62;
+        li.param 
+          pre &#60;on/off&#62;
+
+div.command
+  h4.command-name set build
+  ol.usages
+    li.usage
+      span.description Edit a field on the build. `|` is only between build Id and following parameters.
+      ul.params
+        li.param 
+          pre &#60;type (all, title, body, image)&#62;
+        li.param 
+          pre &#60;buildId&#62;
+        li.param 
+          pre &#60;title\*&#62;
+        li.param 
+          pre &#60;body\*&#62;
+        li.param 
+          pre &#60;image\*&#62;
+
+div.command
+  h4.command-name clear default roles
+  ol.usages
+    li.usage
+      span.description Clears all default roles for the server.
+      ul.params
+
+div.command
+  h4.command-name delete default role
+  ol.usages
+    li.usage
+      span.description Add a new default role for persons joining the server.
+      ul.params
+        li.param 
+          pre &#60;message&#62;
+
+div.command
+  h4.command-name templates add
+  ol.usages
+    li.usage
+      span.description Add a template channel. If `--relay` is specified, it will use relay naming.
+      ul.params
+        li.param 
+          pre &#60;channel mention&#62;
+        li.param 
+          pre &#60;--relay&#62;
+
+div.command
+  h4.command-name templates delete
+  ol.usages
+    li.usage
+      span.description Remove a template channel
+      ul.params
+        li.param 
+          pre &#60;channel mention&#62;
+
+div.command
+  h4.command-name templates list
+  ol.usages
+    li.usage
+      span.description List Template Channels
+      ul.params
+
+div.command
+  h4.command-name templates set
+  ol.usages
+    li.usage
+      span.description Set a channel template's name template. `$username` is available as a replacement for using the name of the user that generated the channel.
+      ul.params
+        li.param 
+          pre &#60;channel mention&#62;
+        li.param 
+          pre &#60;name template&#62;
+
+div.command
+  h4.command-name lfg|hosting|lfm
+  ol.usages
+    li.usage
+      span.description Submit an LFG request to this guild's LFG channel.
+      ul.params
+        li.param 
+          pre &#60;place&#62;
+        li.param 
+          pre &#60;time&#62;
+        li.param 
+          pre &#60;for&#62;
+        li.param 
+          pre &#60;platform\*&#62;
+        li.param 
+          pre &#60;expiry\*&#62;
+        li.param 
+          pre &#60;members\*&#62;
+
+div.command
+  h4.command-name set lfg channel
+  ol.usages
+    li.usage
+      span.description Set the LFG channel
+      ul.params
+        li.param 
+          pre &#60;platform&#62;
+        li.param 
+          pre &#60;channel id&#62;
+
+div.command
+  h4.command-name add role
+  ol.usages
+    li.usage
+      span.description Show instructions for adding joinable roles
+      ul.params
+    li.usage
+      span.description Add a role
+      ul.params
+        li.param 
+          pre &#60;Role/Role id to add&#62;
+        li.param 
+          pre &#60;--create&#62;
+        li.param 
+          pre &#60;--mentionable&#62;
+        li.param 
+          pre &#60;--leavable (on | off)&#62;
+        li.param 
+          pre &#60;--requires @Role Mention&#62;
+
+div.command
+  h4.command-name join
+  ol.usages
+    li.usage
+      span.description Show instructions for joining roles
+      ul.params
+    li.usage
+      span.description Joining a role
+      ul.params
+        li.param 
+          pre &#60;Role/Role id to join.&#62;
+
+div.command
+  h4.command-name leave
+  ol.usages
+    li.usage
+      span.description Show instructions for leaving roles
+      ul.params
+    li.usage
+      span.description Leave a role
+      ul.params
+        li.param 
+          pre &#60;Role/Role id to leave&#62;
+
+div.command
+  h4.command-name remove role
+  ol.usages
+    li.usage
+      span.description Show instructions for removing joinable roles
+      ul.params
+    li.usage
+      span.description Remove a role
+      ul.params
+        li.param 
+          pre &#60;Role/Role id to add&#62;
+        li.param 
+          pre &#60;--delete&#62;
+
+div.command
+  h4.command-name roleids
+  ol.usages
+    li.usage
+      span.description Get list of role ids
+      ul.params
+
+div.command
+  h4.command-name roles
+  ol.usages
+    li.usage
+      span.description Get list of joinable roles
+      ul.params
+
+div.command
+  h4.command-name r track
+  ol.usages
+    li.usage
+      span.description Add a new channel <-> role stats binding
+      ul.params
+        li.param 
+          pre &#60;channel&#62;
+        li.param 
+          pre &#60;role&#62;
+
+div.command
+  h4.command-name r untrack
+  ol.usages
+    li.usage
+      span.description Remove an existing role channel binding
+      ul.params
+        li.param 
+          pre &#60;channel&#62;
+        li.param 
+          pre &#60;role&#62;
+
+div.command
+  h4.command-name set ping
+  ol.usages
+    li.usage
+      span.description Set ping for an event or item
+      ul.params
+        li.param 
+          pre &#60;event or reward&#62;
+        li.param 
+          pre &#60;@role or user mention&#62;
+
+div.command
+  h4.command-name start
+  ol.usages
+    li.usage
+      span.description Lols
+      ul.params
+
+div.command
+  h4.command-name stop
+  ol.usages
+    li.usage
+      span.description Untracks everything in a channel, effectively stopping tracking for the channel
+      ul.params
+
+div.command
+  h4.command-name track
+  ol.usages
+    li.usage
+      span.description Show tracking command for tracking events
+      ul.params
+    li.usage
+      span.description Track an event or events
+      ul.params
+        li.param 
+          pre &#60;event(s) to track&#62;
+
+div.command
+  h4.command-name untrack
+  ol.usages
+    li.usage
+      span.description Show tracking command for untracking events
+      ul.params
+    li.usage
+      span.description Untrack an event or events
+      ul.params
+        li.param 
+          pre &#60;event(s) to untrack&#62;
+
+div.command
+  h4.command-name dump
+  ol.usages
+    li.usage
+      span.description Dump a channel config to a channel
+      ul.params
+        li.param 
+          pre &#60;JSON configuration file&#62;
+
+div.command
+  h4.command-name getcommandids
+  ol.usages
+    li.usage
+      span.description Get list of bot command ids available for you to view
+      ul.params
+
+div.command
+  h4.command-name serverinfo
+  ol.usages
+    li.usage
+      span.description Get info about current server
+      ul.params
+
+div.command
+  h4.command-name transmit
+  ol.usages
+    li.usage
+      span.description Send Solaris-esque transmission to a channel
+      ul.params
+        li.param 
+          pre &#60;JSON configuration file&#62;
+
+div.command
+  h4.command-name userinfo
+  ol.usages
+    li.usage
+      span.description Get info about a user
+      ul.params
+
+div.command
+  h4.command-name clear welcome message
+  ol.usages
+    li.usage
+      span.description Clears all messages (non-DM) for this guild.
+      ul.params
+
+div.command
+  h4.command-name add welcome dm
+  ol.usages
+    li.usage
+      span.description Add a welcome message for this server in this channel to send to a user in DM
+      ul.params
+        li.param 
+          pre &#60;message&#62;

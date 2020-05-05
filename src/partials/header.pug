@@ -1,8 +1,14 @@
 .header.d-flex.flex-column.justify-content-between.align-items-center(class=`${page === 'index' ? 'index' : ''}`)
   nav.topmenu.d-flex.justify-content-center
-    a(href=`${page === 'index' ? '#about' : 'index.pug'}` class=`${page === 'index' ? 'active' : ''}`) About
+    a(href=`${page === 'index' ? '#about' : '/index.pug'}` class=`${page === 'index' ? 'active' : ''}`) About
     .line.align-self-center
-    a(href='commands.pug' class=`${page === 'commands' ? 'active' : ''}`) Commands
+    div.dropdown
+      a.dropdown-toggle(role='button' id='cmd-drop' href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        | Commands
+      div.dropdown-menu(aria-labelledby='cmd-drop')
+        a.dropdown-item(href='/commands/core.pug') Core
+        a.dropdown-item(href='/commands/util.pug') Utilities
+        a.dropdown-item(href='/commands/warframe.pug') Warframe
     .line.align-self-center
     a(href='https://discord.gg/DuFunUv' target='_blank') Join
     .line.align-self-center

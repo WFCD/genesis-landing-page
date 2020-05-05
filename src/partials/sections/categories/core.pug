@@ -1,0 +1,388 @@
+div.command
+  h4.command-name bl add
+  ol.usages
+    li.usage
+      span.description Add a user to this server's blacklist, preventing the user from calling commands.
+      ul.params
+        li.param 
+          pre &#60;user&#62;
+    li.usage
+      span.description Add a user to the global blacklist. Owner only. `--global` or `-g` specify global
+      ul.params
+        li.param 
+          pre &#60;user&#62;
+        li.param 
+          pre &#60;--global&#62;
+        li.param 
+          pre &#60;-g&#62;
+
+div.command
+  h4.command-name bl remove
+  ol.usages
+    li.usage
+      span.description Remove a user from this server's blacklist.
+      ul.params
+        li.param 
+          pre &#60;user&#62;
+    li.usage
+      span.description Remove a user from the global blacklist. Owner only. `--global` or `-g` specify global
+      ul.params
+        li.param 
+          pre &#60;user&#62;
+        li.param 
+          pre &#60;--global&#62;
+        li.param 
+          pre &#60;-g&#62;
+
+div.command
+  h4.command-name bl ls
+  ol.usages
+    li.usage
+      span.description List users in the blacklist
+      ul.params
+
+div.command
+  h4.command-name bug
+  ol.usages
+    li.usage
+      span.description Send a bug report to bot owner
+      ul.params
+        li.param 
+          pre &#60;bug report&#62;
+    li.usage
+      span.description Send a bug report to bot owner with subject, message, and optional screenshot. The `|` are important.
+      ul.params
+        li.param 
+          pre &#60;subject&#62;
+        li.param 
+          pre &#60;body&#62;
+        li.param 
+          pre &#60;* screenshot&#62;
+    li.usage
+      span.description Send a bug report to bot owner with subject, message, and optional screenshot. The `|` are important.
+      ul.params
+        li.param 
+          pre &#60;subject&#62;
+        li.param 
+          pre &#60;body&#62;
+        li.param 
+          pre &#60;attached image&#62;
+
+div.command
+  h4.command-name help
+  ol.usages
+    li.usage
+      span.description Receive the full welcome data by visiting the provided link.
+      ul.params
+    li.usage
+      span.description Query for info about a specific command
+      ul.params
+        li.param 
+          pre &#60;command search&#62;
+
+div.command
+  h4.command-name info
+  ol.usages
+    li.usage
+      span.description Information about the bot
+      ul.params
+
+div.command
+  h4.command-name invitation
+  ol.usages
+    li.usage
+      span.description Send Invitation Link to Authorize Bot to Join a Server
+      ul.params
+
+div.command
+  h4.command-name ping
+  ol.usages
+    li.usage
+      span.description Ping Genesis to test connectivity
+      ul.params
+
+div.command
+  h4.command-name reset
+  ol.usages
+    li.usage
+      span.description Reset the settings for this guild
+      ul.params
+
+div.command
+  h4.command-name support
+  ol.usages
+    li.usage
+      span.description Support info about the bot
+      ul.params
+
+div.command
+  h4.command-name add cc
+  ol.usages
+    li.usage
+      span.description Add a custom command
+      ul.params
+        li.param 
+          pre &#60;command call&#62;
+        li.param 
+          pre &#60;command response&#62;
+
+div.command
+  h4.command-name delete cc
+  ol.usages
+    li.usage
+      span.description Delete a custom command
+      ul.params
+        li.param 
+          pre &#60;command call&#62;
+
+div.command
+  h4.command-name update cc
+  ol.usages
+    li.usage
+      span.description Update a custom command
+      ul.params
+        li.param 
+          pre &#60;param&#62;
+        li.param 
+          pre &#60;command call&#62;
+        li.param 
+          pre &#60;new param value&#62;
+
+div.command
+  h4.command-name add default role
+  ol.usages
+    li.usage
+      span.description Add a new default role for persons joining the server.
+      ul.params
+        li.param 
+          pre &#60;role id&#62;
+
+div.command
+  h4.command-name [Query]
+  ol.usages
+    li.usage
+      span.description Get stats for a Warframe
+      ul.params
+        li.param 
+          pre &#60;[warframe name]&#62;
+
+div.command
+  h4.command-name avatar
+  ol.usages
+    li.usage
+      span.description Set the bot's avatar url
+      ul.params
+        li.param 
+          pre &#60;avatar url&#62;
+
+div.command
+  h4.command-name delete webhook in
+  ol.usages
+    li.usage
+      span.description Delete the webhook for a given channel id
+      ul.params
+        li.param 
+          pre &#60;channel id&#62;
+
+div.command
+  h4.command-name diag
+  ol.usages
+    li.usage
+      span.description Run some basic diagnostics
+      ul.params
+
+div.command
+  h4.command-name fgc
+  ol.usages
+    li.usage
+      span.description Force garbage collection
+      ul.params
+
+div.command
+  h4.command-name kill
+  ol.usages
+    li.usage
+      span.description Kill current shard
+      ul.params
+
+div.command
+  h4.command-name leaveserver
+  ol.usages
+    li.usage
+      span.description Tell the bot to leave a server, if it's cached
+      ul.params
+        li.param 
+          pre &#60;server id&#62;
+
+div.command
+  h4.command-name reload
+  ol.usages
+    li.usage
+      span.description Reload bot modules
+      ul.params
+
+div.command
+  h4.command-name restart
+  ol.usages
+    li.usage
+      span.description Restart bot
+      ul.params
+
+div.command
+  h4.command-name servers
+  ol.usages
+    li.usage
+      span.description Get list of bot servers in file
+      ul.params
+
+div.command
+  h4.command-name username
+  ol.usages
+    li.usage
+      span.description Set the bot's username
+      ul.params
+        li.param 
+          pre &#60;username&#62;
+
+div.command
+  h4.command-name allow inline commands
+  ol.usages
+    li.usage
+      span.description Change if this channel can use inline commands
+      ul.params
+        li.param 
+          pre &#60;inline commands enabled&#62;
+
+div.command
+  h4.command-name clear permissions
+  ol.usages
+    li.usage
+      span.description Clear channel permisions for this or specified room, or guild
+      ul.params
+
+div.command
+  h4.command-name clear pings
+  ol.usages
+    li.usage
+      span.description Clears all pings for the server
+      ul.params
+
+div.command
+  h4.command-name delete after respond
+  ol.usages
+    li.usage
+      span.description Change if the bot to delete commands and/or responses after responding in this channel
+      ul.params
+        li.param 
+          pre &#60;deleting enabled&#62;
+
+div.command
+  h4.command-name delete expired
+  ol.usages
+    li.usage
+      span.description Change if the bot to deletes expired notifications
+      ul.params
+        li.param 
+          pre &#60;deleting enabled&#62;
+
+div.command
+  h4.command-name disable
+  ol.usages
+    li.usage
+      span.description Disable a command for a role in a channel or channels
+      ul.params
+        li.param 
+          pre &#60;command id> in <channel> for <role|user&#62;
+
+div.command
+  h4.command-name enable
+  ol.usages
+    li.usage
+      span.description Enable a command for a role in a channel or channels
+      ul.params
+        li.param 
+          pre &#60;command id> in <channel> for <role|user&#62;
+
+div.command
+  h4.command-name language
+  ol.usages
+    li.usage
+      span.description Change this channel's language
+      ul.params
+        li.param 
+          pre &#60;language&#62;
+
+div.command
+  h4.command-name platform
+  ol.usages
+    li.usage
+      span.description Change this channel's platform
+      ul.params
+        li.param 
+          pre &#60;platform&#62;
+
+div.command
+  h4.command-name prefix
+  ol.usages
+    li.usage
+      span.description Change this channel's prefix
+      ul.params
+        li.param 
+          pre &#60;prefix (up to 3 characters)&#62;
+
+div.command
+  h4.command-name respond to settings
+  ol.usages
+    li.usage
+      span.description Change if this channel has settings changes responded in it
+      ul.params
+        li.param 
+          pre &#60;response enabled&#62;
+
+div.command
+  h4.command-name settings
+  ol.usages
+    li.usage
+      span.description Get settings
+      ul.params
+
+div.command
+  h4.command-name poll:
+  ol.usages
+    li.usage
+      span.description Create a simple poll
+      ul.params
+        li.param 
+          pre &#60;poll statement&#62;
+
+div.command
+  h4.command-name roll?
+  ol.usages
+    li.usage
+      span.description roll between rivens
+      ul.params
+        li.param 
+          pre &#60;riven link to vote about rolling&#62;
+
+div.command
+  h4.command-name clear welcome dm
+  ol.usages
+    li.usage
+      span.description Clears all welcome direct messages for the server.
+      ul.params
+
+div.command
+  h4.command-name set welcome message
+  ol.usages
+    li.usage
+      span.description Set welcome message for this server in this channel
+      ul.params
+        li.param 
+          pre &#60;message&#62;
+
+div.command
+  h4.command-name when borko
+  ol.usages
+    li.usage
+      span.description Display the current status of the Void Trader
+      ul.params
