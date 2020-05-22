@@ -1,17 +1,26 @@
 
+@fa-font-path:  "~/../node_modules/@fortawesomefree/webfonts";
+
 // Fonts
 @import (css) url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import '../../node_modules/@fortawesome/fontawesome-free/less/fontawesome';
+@import '../../node_modules/@fortawesome/fontawesome-free/less/solid';
 
 // Images
-@background: url('~/img/COMMTOBIAH.png');
-@intro: url('~/img/COMMTOBIAH.png');
-@image1: url('~/img/genplex-b.png');
-@image2: url('~/img/wf-cover.jpg');
+@background:    url('~/img/COMMTOBIAH.png');
+@intro:         url('~/img/COMMTOBIAH.png');
+@image1:        url('~/img/genplex-b.png');
+@image2:        url('~/img/wf-cover.jpg');
 
-body, html {
-  min-height: 100%
-}
-  
+// colors
+@c-primary:     #039afc;
+@c-p-accent:    #009bbb;
+@c-secondary:   #02ccee;
+@c-s-accent:    #69ffff;
+@c-accent:      #69caff;
+
+body, html {   min-height: 100%; }
+
 body {
   background-image: @background;
   background-size: cover;
@@ -320,6 +329,27 @@ h6 {
 // Links suppressor
 a.links-suppressor, .links-suppressor a {
   text-decoration: none;
+}
+
+
+i {
+  &.c-primary { color: @c-primary; }
+  &.c-p-accent { color: @c-p-accent; }
+  &.c-secondary { color: @c-secondary; }
+  &.c-s-accent { color: @c-s-accent; }
+  &.c-accent { color: @c-accent; }
+}
+
+// commands legend
+.legend {
+  color: white;
+}
+
+@media only screen and (min-width: 1000px) {
+  .overlay {
+    padding: 0;
+    margin-bottom: -30vh;
+  }
 }
 
 // commands formatting

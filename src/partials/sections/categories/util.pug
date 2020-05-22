@@ -1,5 +1,5 @@
 div.command
-  h4.command-name add build
+  h4.command-name add build  &nbsp;
   ol.usages
     li.usage
       span.description Display instructions for creating a new build with Genesis
@@ -18,7 +18,8 @@ div.command
       ul.params
 
 div.command
-  h4.command-name delete build
+  h4.command-name delete build  &nbsp;
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Delete an existing build from Genesis
@@ -27,7 +28,8 @@ div.command
           pre &#60;build id&#62;
 
 div.command
-  h4.command-name get build
+  h4.command-name get build  &nbsp;
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Display information on an existing build from Genesis
@@ -36,7 +38,8 @@ div.command
           pre &#60;build id&#62;
 
 div.command
-  h4.command-name list builds
+  h4.command-name list builds  &nbsp;
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Display information on an existing build from Genesis. `|` separates title, body, and image. `;` separates sections in the body.
@@ -45,7 +48,8 @@ div.command
           pre &#60;title | body | image&#62;
 
 div.command
-  h4.command-name search builds
+  h4.command-name search builds  &nbsp;
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Display information on an existing build from Genesis
@@ -54,7 +58,8 @@ div.command
           pre &#60;query&#62;
 
 div.command
-  h4.command-name set public build|spb
+  h4.command-name set public build|spb  &nbsp;
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Set a build or builds to be public
@@ -65,7 +70,7 @@ div.command
           pre &#60;on/off&#62;
 
 div.command
-  h4.command-name set build
+  h4.command-name set build  &nbsp;
   ol.usages
     li.usage
       span.description Edit a field on the build. `|` is only between build Id and following parameters.
@@ -82,14 +87,16 @@ div.command
           pre &#60;image\*&#62;
 
 div.command
-  h4.command-name clear default roles
+  h4.command-name clear default roles  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Clears all default roles for the server.
       ul.params
 
 div.command
-  h4.command-name delete default role
+  h4.command-name delete default role  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Add a new default role for persons joining the server.
@@ -98,7 +105,8 @@ div.command
           pre &#60;message&#62;
 
 div.command
-  h4.command-name templates add
+  h4.command-name templates add  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Add a template channel. If `--relay` is specified, it will use relay naming.
@@ -109,7 +117,8 @@ div.command
           pre &#60;--relay&#62;
 
 div.command
-  h4.command-name templates delete
+  h4.command-name templates delete  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Remove a template channel
@@ -118,14 +127,16 @@ div.command
           pre &#60;channel mention&#62;
 
 div.command
-  h4.command-name templates list
+  h4.command-name templates list  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description List Template Channels
       ul.params
 
 div.command
-  h4.command-name templates set
+  h4.command-name templates set  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Set a channel template's name template. `$username` is available as a replacement for using the name of the user that generated the channel.
@@ -136,7 +147,7 @@ div.command
           pre &#60;name template&#62;
 
 div.command
-  h4.command-name lfg|hosting|lfm
+  h4.command-name lfg|hosting|lfm  &nbsp;
   ol.usages
     li.usage
       span.description Submit an LFG request to this guild's LFG channel.
@@ -155,7 +166,8 @@ div.command
           pre &#60;members\*&#62;
 
 div.command
-  h4.command-name set lfg channel
+  h4.command-name set lfg channel  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Set the LFG channel
@@ -166,7 +178,8 @@ div.command
           pre &#60;channel id&#62;
 
 div.command
-  h4.command-name add role
+  h4.command-name add role  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Show instructions for adding joinable roles
@@ -186,7 +199,7 @@ div.command
           pre &#60;--requires @Role Mention&#62;
 
 div.command
-  h4.command-name join
+  h4.command-name join  &nbsp;
   ol.usages
     li.usage
       span.description Show instructions for joining roles
@@ -198,7 +211,7 @@ div.command
           pre &#60;Role/Role id to join.&#62;
 
 div.command
-  h4.command-name leave
+  h4.command-name leave  &nbsp;
   ol.usages
     li.usage
       span.description Show instructions for leaving roles
@@ -210,7 +223,8 @@ div.command
           pre &#60;Role/Role id to leave&#62;
 
 div.command
-  h4.command-name remove role
+  h4.command-name remove role  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Show instructions for removing joinable roles
@@ -224,21 +238,23 @@ div.command
           pre &#60;--delete&#62;
 
 div.command
-  h4.command-name roleids
+  h4.command-name roleids  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Get list of role ids
       ul.params
 
 div.command
-  h4.command-name roles
+  h4.command-name roles  &nbsp;
   ol.usages
     li.usage
       span.description Get list of joinable roles
       ul.params
 
 div.command
-  h4.command-name r track
+  h4.command-name r track  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Add a new channel <-> role stats binding
@@ -249,7 +265,8 @@ div.command
           pre &#60;role&#62;
 
 div.command
-  h4.command-name r untrack
+  h4.command-name r untrack  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Remove an existing role channel binding
@@ -260,7 +277,8 @@ div.command
           pre &#60;role&#62;
 
 div.command
-  h4.command-name set ping
+  h4.command-name set ping  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Set ping for an event or item
@@ -271,21 +289,27 @@ div.command
           pre &#60;@role or user mention&#62;
 
 div.command
-  h4.command-name start
+  h4.command-name start  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Lols
       ul.params
 
 div.command
-  h4.command-name stop
+  h4.command-name stop  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Untracks everything in a channel, effectively stopping tracking for the channel
       ul.params
 
 div.command
-  h4.command-name track
+  h4.command-name track  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Show tracking command for tracking events
@@ -297,7 +321,9 @@ div.command
           pre &#60;event(s) to track&#62;
 
 div.command
-  h4.command-name untrack
+  h4.command-name untrack  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Show tracking command for untracking events
@@ -309,7 +335,8 @@ div.command
           pre &#60;event(s) to untrack&#62;
 
 div.command
-  h4.command-name dump
+  h4.command-name dump  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Dump a channel config to a channel
@@ -318,21 +345,25 @@ div.command
           pre &#60;JSON configuration file&#62;
 
 div.command
-  h4.command-name getcommandids
+  h4.command-name getcommandids  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Get list of bot command ids available for you to view
       ul.params
 
 div.command
-  h4.command-name serverinfo
+  h4.command-name serverinfo  &nbsp;
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Get info about current server
       ul.params
 
 div.command
-  h4.command-name transmit
+  h4.command-name transmit  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Send Solaris-esque transmission to a channel
@@ -341,21 +372,24 @@ div.command
           pre &#60;JSON configuration file&#62;
 
 div.command
-  h4.command-name userinfo
+  h4.command-name userinfo  &nbsp;
+    include ../../decals/direct
   ol.usages
     li.usage
       span.description Get info about a user
       ul.params
 
 div.command
-  h4.command-name clear welcome message
+  h4.command-name clear welcome message  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Clears all messages (non-DM) for this guild.
       ul.params
 
 div.command
-  h4.command-name add welcome dm
+  h4.command-name add welcome dm  &nbsp;
+    include ../../decals/elevated
   ol.usages
     li.usage
       span.description Add a welcome message for this server in this channel to send to a user in DM

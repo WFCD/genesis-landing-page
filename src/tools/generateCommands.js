@@ -1,5 +1,13 @@
 'use strict';
 
+const decals = {
+  elevated: 'include ../../decals/elevated',
+  owner: 'include ../../decals/owner',
+  direct: 'include ../../decals/direct',
+  blacklist: 'include ../../decals/blacklist',
+  inline: 'include ../../decals/inline',
+};
+
 const path = require('path');
 const fs = require('fs');
 
@@ -13,7 +21,13 @@ const entity = str => str.replace(/[\u00A0-\u9999<>\&]/gim, i=> '&#'+i.charCodeA
 
 // convert command into pug tokens
 commands.forEach((command) => {
-  let token = `div.command\n  h4.command-name ${command.call}`;
+  let token = `div.command\n  h4.command-name ${command.call}  &nbsp;`;
+  
+  if (command.requiresAuth) token += `\n    ${decals.elevated}`;
+  if (command.ownerOnly) token += `\n    ${decals.owner}`;
+  if (command.allowDM) token += `\n    ${decals.direct}`;
+  if (!command.blacklistable) token += `\n    ${decals.blacklist}`;
+  if (command.isInline) token += `\n    ${decals.inline}`;
 
   if (command.usages) {
     token +=`\n  ol.usages`;

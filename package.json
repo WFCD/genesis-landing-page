@@ -5,8 +5,8 @@
   "main": ".",
   "scripts": {
     "test": ".",
-    "start": "npx parcel src/index.pug --out-dir __build --cache-dir __build/.cache",
-    "build": "npx parcel build src/index.pug --out-dir docs --cache-dir __build/.cache"
+    "start": "npx -p parcel-bundler parcel src/index.pug --out-dir __build --cache-dir __build/.cache",
+    "build": "npx -p parcel-bundler parcel build src/index.pug --out-dir docs --no-cache"
   },
   "keywords": [
     "pug",
@@ -17,6 +17,7 @@
   "author": "orels1",
   "license": "MIT",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "@vue/component-compiler-utils": "^3.1.2",
     "bootstrap": "^4.4.1",
     "cssnano": "^4.1.10",
