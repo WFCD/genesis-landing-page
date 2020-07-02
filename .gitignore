@@ -10,3 +10,4 @@ src/tools/commands.json
 __build/
 
 **/.cache
+dist

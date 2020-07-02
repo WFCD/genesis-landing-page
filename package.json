@@ -15,6 +15,9 @@
     "discord"
   ],
   "author": "orels1",
+  "contributors": [
+    "tobitenno <tobiah@warframe.gg>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
