@@ -6,7 +6,7 @@
   "scripts": {
     "test": ".",
     "start": "npx -p parcel-bundler parcel src/index.pug --out-dir __build --cache-dir __build/.cache",
-    "build": "npx -p parcel-bundler parcel build src/index.pug --out-dir docs --no-cache"
+    "build": "npx -p parcel-bundler parcel build src/index.pug --out-dir dist --no-cache"
   },
   "keywords": [
     "pug",
