@@ -87,6 +87,16 @@ div.command
           pre &#60;image\*&#62;
 
 div.command
+  h4.command-name add default role  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Add a new default role for persons joining the server.
+      ul.params
+        li.param 
+          pre &#60;role id&#62;
+
+div.command
   h4.command-name clear default roles  &nbsp;
     include ../../decals/elevated
   ol.usages
@@ -99,10 +109,10 @@ div.command
     include ../../decals/elevated
   ol.usages
     li.usage
-      span.description Add a new default role for persons joining the server.
+      span.description Delete a default role for persons joining the server.
       ul.params
         li.param 
-          pre &#60;message&#62;
+          pre &#60;role mention&#62;
 
 div.command
   h4.command-name templates add  &nbsp;
@@ -386,6 +396,16 @@ div.command
     li.usage
       span.description Clears all messages (non-DM) for this guild.
       ul.params
+
+div.command
+  h4.command-name set welcome message  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Set welcome message for this server in this channel
+      ul.params
+        li.param 
+          pre &#60;message&#62;
 
 div.command
   h4.command-name add welcome dm  &nbsp;

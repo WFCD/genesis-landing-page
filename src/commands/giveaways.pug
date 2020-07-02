@@ -1,0 +1,21 @@
+- const page = 'commands'
+include ../mixins/user
+include ../mixins/channel
+include ../mixins/game
+
+html
+  include ../partials/head.pug
+  head
+    title Genesis | Commands
+  body
+    .container.d-flex.flex-column
+      include ../partials/header.pug
+
+      include ../partials/commands-legend.pug
+      .inner.d-flex.flex-column
+        section.d-flex.justify-content-between.flex-lg-nowrap.flex-wrap
+          .text
+            h3 giveaways
+            include ../partials/sections/categories/giveaways
+
+      include ../partials/footer.pug

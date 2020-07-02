@@ -1,0 +1,25 @@
+div.command
+  h4.command-name g start  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Start a giveaway. Format: `/g start 2w 1 Awesome Prize!`
+      ul.params
+        li.param 
+          pre &#60;time&#62;
+        li.param 
+          pre &#60;winners&#62;
+        li.param 
+          pre &#60;*channel&#62;
+        li.param 
+          pre &#60;prize&#62;
+
+div.command
+  h4.command-name g stop  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Stop a giveaway.
+      ul.params
+        li.param 
+          pre &#60;giveaway message id&#62;

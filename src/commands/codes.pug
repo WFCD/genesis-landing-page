@@ -1,0 +1,21 @@
+- const page = 'commands'
+include ../mixins/user
+include ../mixins/channel
+include ../mixins/game
+
+html
+  include ../partials/head.pug
+  head
+    title Genesis | Giveaway Code Management
+  body
+    .container.d-flex.flex-column
+      include ../partials/header.pug
+
+      include ../partials/commands-legend.pug
+      .inner.d-flex.flex-column
+        section.d-flex.justify-content-between.flex-lg-nowrap.flex-wrap
+          .text
+            h3 Giveaway Code Management
+            include ../partials/sections/categories/codes
+
+      include ../partials/footer.pug

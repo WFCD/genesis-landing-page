@@ -1,0 +1,204 @@
+div.command
+  h4.command-name glyphs add manager  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Add a manager to a glyph pool
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+        li.param 
+          pre &#60;<user mention or id>&#62;
+
+div.command
+  h4.command-name glyphs import  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Add a single code
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+        li.param 
+          pre &#60;<platform>&#62;
+        li.param 
+          pre &#60;<code>&#62;
+    li.usage
+      span.description Bulk add codes. Export a single code to see the format.
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+        li.param 
+          pre &#60;<platform>&#62;
+        li.param 
+          pre &#60;<code>&#62;
+
+div.command
+  h4.command-name glyphs claim  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Claim a code
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+        li.param 
+          pre &#60;--password <pool password> (required if pool is secured)&#62;
+        li.param 
+          pre &#60;<platform>&#62;
+
+div.command
+  h4.command-name glyphs clear password  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Clear a pool's password
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+
+div.command
+  h4.command-name glyphs create pool  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Create a pool from a name
+      ul.params
+        li.param 
+          pre &#60;new pool name&#62;
+
+div.command
+  h4.command-name glyphs del pool  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Remove a glyph pool that you manage
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+
+div.command
+  h4.command-name glyphs export  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Export codes from a pool to a `.csv` file
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+
+div.command
+  h4.command-name glyphs grant  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Grant a code to a user from a specific pool
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+        li.param 
+          pre &#60;<platform>&#62;
+        li.param 
+          pre &#60;<user mention or id>&#62;
+
+div.command
+  h4.command-name glyphs list claimed  &nbsp;
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description List claimed codes.
+      ul.params
+
+div.command
+  h4.command-name glyphs list managed  &nbsp;
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description List claimed codes.
+      ul.params
+
+div.command
+  h4.command-name glyphs del manager  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Remove a manager from a code pool
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+        li.param 
+          pre &#60;<user mention or id>&#62;
+
+div.command
+  h4.command-name glyphs restrict  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Restrict or unrestrict a pool
+      ul.params
+        li.param 
+          pre &#60;<on | off>&#62;
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+
+div.command
+  h4.command-name glyphs revoke  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Revoke a claimed promocode from a user
+      ul.params
+        li.param 
+          pre &#60;code to revoke&#62;
+
+div.command
+  h4.command-name glyphs set guild  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Set the default guild (server) for a pool
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+        li.param 
+          pre &#60;<guild (server) id>&#62;
+
+div.command
+  h4.command-name glyphs set name  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Set a pool's name. This doesn't alter the pool Id.
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+        li.param 
+          pre &#60;<new pool name>&#62;
+
+div.command
+  h4.command-name glyphs set password  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Set a pool's password.
+      ul.params
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
+        li.param 
+          pre &#60;<new pool password>&#62;
+
+div.command
+  h4.command-name glyphs public  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Make a pool public or private
+      ul.params
+        li.param 
+          pre &#60;<on | off>&#62;
+        li.param 
+          pre &#60;--pool <pool id>*&#62;
