@@ -1,0 +1,26 @@
+name: GitHub pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install Supplemental Dependencies
+        run: npm i
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./__build
+          cname: genesis.warframestat.us
+          force_orphan: true
+          user_name: 'Jimmy Bot'
+          user_email: 'translator@warframe.gg'

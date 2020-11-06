@@ -5,8 +5,8 @@
   "main": ".",
   "scripts": {
     "test": ".",
-    "start": "npx -p parcel-bundler parcel src/index.pug --out-dir __build --cache-dir __build/.cache",
-    "build": "npx -p parcel-bundler parcel build src/index.pug --out-dir dist --no-cache"
+    "start": "parcel src/index.pug --out-dir __build --cache-dir __build/.cache",
+    "build": "parcel build src/index.pug --out-dir dist --no-cache"
   },
   "keywords": [
     "pug",
@@ -26,6 +26,7 @@
     "cssnano": "^4.1.10",
     "jquery": "^3.5.1",
     "less": "^3.11.1",
+    "parcel-bundler": "^1.12.4",
     "popper.js": "^1.16.1",
     "pug": "^2.0.4",
     "sass": "^1.26.5"
