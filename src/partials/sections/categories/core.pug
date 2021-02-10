@@ -1,78 +1,4 @@
 div.command
-  h4.command-name bl add  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Add a user to this server's blacklist, preventing the user from calling commands.
-      ul.params
-        li.param 
-          pre &#60;user&#62;
-    li.usage
-      span.description Add a user to the global blacklist. Owner only. `--global` or `-g` specify global
-      ul.params
-        li.param 
-          pre &#60;user&#62;
-        li.param 
-          pre &#60;--global&#62;
-        li.param 
-          pre &#60;-g&#62;
-
-div.command
-  h4.command-name bl remove  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Remove a user from this server's blacklist.
-      ul.params
-        li.param 
-          pre &#60;user&#62;
-    li.usage
-      span.description Remove a user from the global blacklist. Owner only. `--global` or `-g` specify global
-      ul.params
-        li.param 
-          pre &#60;user&#62;
-        li.param 
-          pre &#60;--global&#62;
-        li.param 
-          pre &#60;-g&#62;
-
-div.command
-  h4.command-name bl ls  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description List users in the blacklist
-      ul.params
-
-div.command
-  h4.command-name bug  &nbsp;
-    include ../../decals/direct
-  ol.usages
-    li.usage
-      span.description Send a bug report to bot owner
-      ul.params
-        li.param 
-          pre &#60;bug report&#62;
-    li.usage
-      span.description Send a bug report to bot owner with subject, message, and optional screenshot. The `|` are important.
-      ul.params
-        li.param 
-          pre &#60;subject&#62;
-        li.param 
-          pre &#60;body&#62;
-        li.param 
-          pre &#60;* screenshot&#62;
-    li.usage
-      span.description Send a bug report to bot owner with subject, message, and optional screenshot. The `|` are important.
-      ul.params
-        li.param 
-          pre &#60;subject&#62;
-        li.param 
-          pre &#60;body&#62;
-        li.param 
-          pre &#60;attached image&#62;
-
-div.command
   h4.command-name help  &nbsp;
     include ../../decals/direct
   ol.usages
@@ -86,80 +12,12 @@ div.command
           pre &#60;command search&#62;
 
 div.command
-  h4.command-name info  &nbsp;
-    include ../../decals/direct
-  ol.usages
-    li.usage
-      span.description Information about the bot
-      ul.params
-
-div.command
-  h4.command-name invitation  &nbsp;
-    include ../../decals/direct
-  ol.usages
-    li.usage
-      span.description Send Invitation Link to Authorize Bot to Join a Server
-      ul.params
-
-div.command
   h4.command-name ping  &nbsp;
     include ../../decals/direct
   ol.usages
     li.usage
       span.description Ping Genesis to test connectivity
       ul.params
-
-div.command
-  h4.command-name reset  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Reset the settings for this guild
-      ul.params
-
-div.command
-  h4.command-name support  &nbsp;
-    include ../../decals/direct
-  ol.usages
-    li.usage
-      span.description Support info about the bot
-      ul.params
-
-div.command
-  h4.command-name add cc  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Add a custom command
-      ul.params
-        li.param 
-          pre &#60;command call&#62;
-        li.param 
-          pre &#60;command response&#62;
-
-div.command
-  h4.command-name delete cc  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Delete a custom command
-      ul.params
-        li.param 
-          pre &#60;command call&#62;
-
-div.command
-  h4.command-name update cc  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Update a custom command
-      ul.params
-        li.param 
-          pre &#60;param&#62;
-        li.param 
-          pre &#60;command call&#62;
-        li.param 
-          pre &#60;new param value&#62;
 
 div.command
   h4.command-name [Query]  &nbsp;
@@ -203,24 +61,6 @@ div.command
       ul.params
 
 div.command
-  h4.command-name fgc  &nbsp;
-    include ../../decals/owner
-    include ../../decals/direct
-  ol.usages
-    li.usage
-      span.description Force garbage collection
-      ul.params
-
-div.command
-  h4.command-name kill  &nbsp;
-    include ../../decals/owner
-    include ../../decals/direct
-  ol.usages
-    li.usage
-      span.description Kill current shard
-      ul.params
-
-div.command
   h4.command-name leaveserver  &nbsp;
     include ../../decals/owner
     include ../../decals/direct
@@ -251,15 +91,6 @@ div.command
       ul.params
 
 div.command
-  h4.command-name servers  &nbsp;
-    include ../../decals/owner
-    include ../../decals/direct
-  ol.usages
-    li.usage
-      span.description Get list of bot servers in file
-      ul.params
-
-div.command
   h4.command-name username  &nbsp;
     include ../../decals/owner
     include ../../decals/direct
@@ -271,75 +102,6 @@ div.command
           pre &#60;username&#62;
 
 div.command
-  h4.command-name allow inline commands  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Change if this channel can use inline commands
-      ul.params
-        li.param 
-          pre &#60;inline commands enabled&#62;
-
-div.command
-  h4.command-name clear permissions  &nbsp;
-    include ../../decals/elevated
-    include ../../decals/blacklist
-  ol.usages
-    li.usage
-      span.description Clear channel permisions for this or specified room, or guild
-      ul.params
-
-div.command
-  h4.command-name clear pings  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Clears all pings for the server
-      ul.params
-
-div.command
-  h4.command-name delete after respond  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Change if the bot to delete commands and/or responses after responding in this channel
-      ul.params
-        li.param 
-          pre &#60;deleting enabled&#62;
-
-div.command
-  h4.command-name delete expired  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Change if the bot to deletes expired notifications
-      ul.params
-        li.param 
-          pre &#60;deleting enabled&#62;
-
-div.command
-  h4.command-name disable  &nbsp;
-    include ../../decals/elevated
-    include ../../decals/blacklist
-  ol.usages
-    li.usage
-      span.description Disable a command for a role in a channel or channels
-      ul.params
-        li.param 
-          pre &#60;command id> in <channel> for <role|user&#62;
-
-div.command
-  h4.command-name enable  &nbsp;
-    include ../../decals/elevated
-    include ../../decals/blacklist
-  ol.usages
-    li.usage
-      span.description Enable a command for a role in a channel or channels
-      ul.params
-        li.param 
-          pre &#60;command id> in <channel> for <role|user&#62;
-
-div.command
   h4.command-name language  &nbsp;
     include ../../decals/elevated
     include ../../decals/direct
@@ -348,7 +110,25 @@ div.command
       span.description Change this channel's language
       ul.params
         li.param 
-          pre &#60;language&#62;
+          pre &#60;en&#62;
+        li.param 
+          pre &#60;de&#62;
+        li.param 
+          pre &#60;es&#62;
+        li.param 
+          pre &#60;fr&#62;
+        li.param 
+          pre &#60;it&#62;
+        li.param 
+          pre &#60;ko&#62;
+        li.param 
+          pre &#60;pl&#62;
+        li.param 
+          pre &#60;pt&#62;
+        li.param 
+          pre &#60;ru&#62;
+        li.param 
+          pre &#60;zh&#62;
 
 div.command
   h4.command-name platform  &nbsp;
@@ -359,38 +139,13 @@ div.command
       span.description Change this channel's platform
       ul.params
         li.param 
-          pre &#60;platform&#62;
-
-div.command
-  h4.command-name prefix  &nbsp;
-    include ../../decals/elevated
-    include ../../decals/direct
-  ol.usages
-    li.usage
-      span.description Change this channel's prefix
-      ul.params
+          pre &#60;pc&#62;
         li.param 
-          pre &#60;prefix (up to 3 characters)&#62;
-
-div.command
-  h4.command-name respond to settings  &nbsp;
-    include ../../decals/elevated
-    include ../../decals/direct
-  ol.usages
-    li.usage
-      span.description Change if this channel has settings changes responded in it
-      ul.params
+          pre &#60;ps4&#62;
         li.param 
-          pre &#60;response enabled&#62;
-
-div.command
-  h4.command-name settings  &nbsp;
-    include ../../decals/elevated
-    include ../../decals/direct
-  ol.usages
-    li.usage
-      span.description Get settings
-      ul.params
+          pre &#60;xb1&#62;
+        li.param 
+          pre &#60;swi&#62;
 
 div.command
   h4.command-name poll:  &nbsp;
@@ -413,14 +168,6 @@ div.command
       ul.params
         li.param 
           pre &#60;riven link to vote about rolling&#62;
-
-div.command
-  h4.command-name clear welcome dm  &nbsp;
-    include ../../decals/elevated
-  ol.usages
-    li.usage
-      span.description Clears all welcome direct messages for the server.
-      ul.params
 
 div.command
   h4.command-name when borko  &nbsp;

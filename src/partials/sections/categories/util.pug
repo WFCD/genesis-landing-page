@@ -42,10 +42,8 @@ div.command
     include ../../decals/direct
   ol.usages
     li.usage
-      span.description Display information on an existing build from Genesis. `|` separates title, body, and image. `;` separates sections in the body.
+      span.description List current builds for requesting user.
       ul.params
-        li.param 
-          pre &#60;title | body | image&#62;
 
 div.command
   h4.command-name search builds  &nbsp;
@@ -188,6 +186,24 @@ div.command
           pre &#60;channel id&#62;
 
 div.command
+  h4.command-name fgc  &nbsp;
+    include ../../decals/owner
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Force garbage collection
+      ul.params
+
+div.command
+  h4.command-name kill  &nbsp;
+    include ../../decals/owner
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Kill current shard
+      ul.params
+
+div.command
   h4.command-name add role  &nbsp;
     include ../../decals/elevated
   ol.usages
@@ -267,7 +283,7 @@ div.command
     include ../../decals/elevated
   ol.usages
     li.usage
-      span.description Add a new channel <-> role stats binding
+      span.description Add a new channel <-> role stats binding. Channel must be a voice channel. Binds voice channel to role count statistics.
       ul.params
         li.param 
           pre &#60;channel&#62;
@@ -395,6 +411,14 @@ div.command
   ol.usages
     li.usage
       span.description Clears all messages (non-DM) for this guild.
+      ul.params
+
+div.command
+  h4.command-name clear welcome dm  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Clears all welcome direct messages for the server.
       ul.params
 
 div.command

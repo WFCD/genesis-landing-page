@@ -1,0 +1,45 @@
+div.command
+  h4.command-name bl add  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Add a user to this server's blacklist, preventing the user from calling commands.
+      ul.params
+        li.param 
+          pre &#60;user&#62;
+    li.usage
+      span.description Add a user to the global blacklist. Owner only. `--global` or `-g` specify global
+      ul.params
+        li.param 
+          pre &#60;user&#62;
+        li.param 
+          pre &#60;--global&#62;
+        li.param 
+          pre &#60;-g&#62;
+
+div.command
+  h4.command-name bl remove  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Remove a user from this server's blacklist.
+      ul.params
+        li.param 
+          pre &#60;user&#62;
+    li.usage
+      span.description Remove a user from the global blacklist. Owner only. `--global` or `-g` specify global
+      ul.params
+        li.param 
+          pre &#60;user&#62;
+        li.param 
+          pre &#60;--global&#62;
+        li.param 
+          pre &#60;-g&#62;
+
+div.command
+  h4.command-name bl ls  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description List users in the blacklist
+      ul.params

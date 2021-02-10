@@ -1,4 +1,26 @@
 div.command
+  h4.command-name add cc  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Add a custom command
+      ul.params
+        li.param 
+          pre &#60;command call&#62;
+        li.param 
+          pre &#60;command response&#62;
+
+div.command
+  h4.command-name delete cc  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Delete a custom command
+      ul.params
+        li.param 
+          pre &#60;command call&#62;
+
+div.command
   h4.command-name list cc  &nbsp;
   ol.usages
     li.usage
@@ -13,7 +35,23 @@ div.command
       span.description Change if this channel's use custom commands will ping
       ul.params
         li.param 
-          pre &#60;custom commands enabled&#62;
+          pre &#60;on&#62;
+        li.param 
+          pre &#60;off&#62;
+
+div.command
+  h4.command-name update cc  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Update a custom command
+      ul.params
+        li.param 
+          pre &#60;param&#62;
+        li.param 
+          pre &#60;command call&#62;
+        li.param 
+          pre &#60;new param value&#62;
 
 div.command
   h4.command-name allow custom commands  &nbsp;
@@ -23,4 +61,6 @@ div.command
       span.description Change if this channel can use custom commands
       ul.params
         li.param 
-          pre &#60;custom commands enabled&#62;
+          pre &#60;on&#62;
+        li.param 
+          pre &#60;off&#62;

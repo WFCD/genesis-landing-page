@@ -1,0 +1,93 @@
+div.command
+  h4.command-name bug  &nbsp;
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Send a bug report to bot owner
+      ul.params
+        li.param 
+          pre &#60;bug report&#62;
+    li.usage
+      span.description Send a bug report to bot owner with subject, message, and optional screenshot. The `|` are important.
+      ul.params
+        li.param 
+          pre &#60;subject&#62;
+        li.param 
+          pre &#60;body&#62;
+        li.param 
+          pre &#60;* screenshot&#62;
+    li.usage
+      span.description Send a bug report to bot owner with subject, message, and optional screenshot. The `|` are important.
+      ul.params
+        li.param 
+          pre &#60;subject&#62;
+        li.param 
+          pre &#60;body&#62;
+        li.param 
+          pre &#60;attached image&#62;
+
+div.command
+  h4.command-name info  &nbsp;
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Information about the bot
+      ul.params
+
+div.command
+  h4.command-name invitation  &nbsp;
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Send Invitation Link to Authorize Bot to Join a Server
+      ul.params
+
+div.command
+  h4.command-name reset  &nbsp;
+    include ../../decals/elevated
+  ol.usages
+    li.usage
+      span.description Reset the settings for this guild
+      ul.params
+
+div.command
+  h4.command-name support  &nbsp;
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Support info about the bot
+      ul.params
+
+div.command
+  h4.command-name servers  &nbsp;
+    include ../../decals/owner
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Get list of bot servers in file
+      ul.params
+
+div.command
+  h4.command-name prefix  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Change this channel's prefix
+      ul.params
+        li.param 
+          pre &#60;prefix (up to 3 characters)&#62;
+
+div.command
+  h4.command-name settings  &nbsp;
+    include ../../decals/elevated
+    include ../../decals/direct
+  ol.usages
+    li.usage
+      span.description Get current channel settings, in a paginated format
+      ul.params
+    li.usage
+      span.description Get current channel settings, all embeds at once
+      ul.params
+        li.param 
+          pre &#60;--expand&#62;
