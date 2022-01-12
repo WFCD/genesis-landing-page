@@ -1,6 +1,12 @@
 .header.d-flex.flex-column.justify-content-between.align-items-center(class=`${page === 'index' ? 'index' : ''}`)
   nav.topmenu.d-flex.justify-content-center
-    a(href=`${page === 'index' ? '#about' : '/index.pug'}` class=`${page === 'index' ? 'active' : ''}`) About
+    div.dropdown
+      a.dropdown-toggle(role='button' id='base-drop' href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+        | About
+      div.dropdown-menu(aria-labelledby='base-drop')
+        a.dropdown-item(href=`${page === 'index' ? '#about' : '/index.pug'}` class=`${page === 'index' ? 'active' : ''}`) Home
+        a.dropdown-item(href=`${page === 'privacy' ? '#' : '/privacy.pug'}` class=`${page === 'privacy' ? 'active' : ''}`) Privacy
+        a.dropdown-item(href=`${page === 'tos' ? '#' : '/tos.pug'}` class=`${page === 'tos' ? 'active' : ''}`) TOS
     .line.align-self-center
     div.dropdown
       a.dropdown-toggle(role='button' id='cmd-drop' href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
