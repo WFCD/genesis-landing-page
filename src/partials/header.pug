@@ -8,23 +8,24 @@
         a.dropdown-item(href=`${page === 'privacy' ? '#' : '/privacy.pug'}` class=`${page === 'privacy' ? 'active' : ''}`) Privacy
         a.dropdown-item(href=`${page === 'tos' ? '#' : '/tos.pug'}` class=`${page === 'tos' ? 'active' : ''}`) TOS
     .line.align-self-center
-    div.dropdown
-      a.dropdown-toggle(role='button' id='cmd-drop' href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-        | Commands
-      div.dropdown-menu(aria-labelledby='cmd-drop')
-        a.dropdown-item(href='/commands/block.pug') Blocking
-        a.dropdown-item(href='/commands/bot_mgmt.pug') Bot Mgmt
-        a.dropdown-item(href='/commands/cmd_mgmt.pug') Command Mgmt
-        //- a.dropdown-item(href='/commands/codes.pug') Codes
-        a.dropdown-item(href='/commands/core.pug') Core
-        a.dropdown-item(href='/commands/cust_cmds.pug') Custom Commands
-        a.dropdown-item(href='/commands/fun.pug') Fun
-        //- a.dropdown-item(href='/commands/giveaways.pug') Giveaways
-        a.dropdown-item(href='/commands/logging.pug') Logging
-        a.dropdown-item(href='/commands/rooms.pug') Rooms
-        a.dropdown-item(href='/commands/util.pug') Utilities
-        a.dropdown-item(href='/commands/warframe.pug') Warframe
-        a.dropdown-item(href='/commands/tracking.pug') Tracking
+    a(href='/commands/tracking.pug' class=`${page === 'tracking' ? 'active' : ''}`) Tracking
+    //div.dropdown
+    //  a.dropdown-toggle(role='button' id='cmd-drop' href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+    //    | Commands
+    //  div.dropdown-menu(aria-labelledby='cmd-drop')
+    //    a.dropdown-item(href='/commands/block.pug') Blocking
+    //    a.dropdown-item(href='/commands/bot_mgmt.pug') Bot Mgmt
+    //    a.dropdown-item(href='/commands/cmd_mgmt.pug') Command Mgmt
+    //    //- a.dropdown-item(href='/commands/codes.pug') Codes
+    //    a.dropdown-item(href='/commands/core.pug') Core
+    //    a.dropdown-item(href='/commands/cust_cmds.pug') Custom Commands
+    //    a.dropdown-item(href='/commands/fun.pug') Fun
+    //    //- a.dropdown-item(href='/commands/giveaways.pug') Giveaways
+    //    a.dropdown-item(href='/commands/logging.pug') Logging
+    //    a.dropdown-item(href='/commands/rooms.pug') Rooms
+    //    a.dropdown-item(href='/commands/util.pug') Utilities
+    //    a.dropdown-item(href='/commands/warframe.pug') Warframe
+    //    a.dropdown-item(href='/commands/tracking.pug') Tracking
     .line.align-self-center
     a(href='https://discord.gg/DuFunUv' target='_blank') Join
     .line.align-self-center
